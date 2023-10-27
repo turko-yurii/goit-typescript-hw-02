@@ -1,6 +1,16 @@
 /*
   Створіть новий тип даних, який підходить для цих двох об'єктів.
 */
+interface Page {
+  title: string;
+  likes: number;
+  accounts: string[];
+  status: "open" | "close";
+  details?: {
+    createAt: Date;
+    update: Date;
+  };
+}
 
 const page1 = {
   title: 'The awesome page',
